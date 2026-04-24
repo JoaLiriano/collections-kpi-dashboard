@@ -52,3 +52,45 @@ FROM contact_activity ca
 	ON ca.Customer_ID = a.Customer_ID
 GROUP BY 1,2
 ORDER BY 1;
+```
+
+---
+
+## 📈 Key KPIs
+The project focuses on core collections performance metrics:
+
+- Contact Rate: % of customers successfully contacted
+- PTP (Promise-to-Pay) Conversion: % of contacted customers who commit to pay
+- Cure Rate: % of accounts that became current
+- Roll Rate: % of accounts that moved to a worse delinquency bucket
+- Agent Productivity: accounts handled and call attempts per agent
+
+## 🛠️ Tools & Technologies
+- SQL – data extraction, joins, KPI calculations
+- Excel – data cleaning, analysis, and dashboarding
+- Tableau / Power BI (optional) – data visualization
+  
+## 🔍 Key Analysis & Insights
+Examples of analysis performed:
+- Performance comparison across risk segments (Low, Medium, High)
+- Identification of accounts more likely to roll forward
+- Evaluation of agent productivity vs. outcomes
+- Analysis of contact effectiveness and call attempts
+
+## 🚀 Business Value
+This project demonstrates how data analytics can:
+- Improve visibility into collections performance
+- Identify operational inefficiencies
+- Support better decision-making through KPI tracking
+- Optimize contact strategies and resource allocation
+
+## 📌 Future Improvements
+- Add time-series data for trend analysis
+- Incorporate payment amounts for cash flow tracking
+- Expand dataset with customer demographics or regional data
+- Build a fully interactive dashboard in Tableau or Power BI
+
+
+👤 Author
+Joanna Liriano
+Data Analyst | KPI Reporting | Business Analytics
