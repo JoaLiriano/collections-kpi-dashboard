@@ -31,7 +31,16 @@ The dataset is structured using a relational model with two main tables:
 
 These tables are linked using **Customer_ID**, enabling relational analysis through SQL joins.
 
----
+
+## 📂 Data Sources
+
+The datasets used in this project are included in the `/data` folder:
+
+- [Accounts Table](data/accounts.csv) – account-level data including balances, delinquency status, and risk segmentation  
+- [Contact Activity Table](data/contact_activity.csv) – agent activity, contact attempts, and payment outcomes  
+- [KPI Summary](data/kpi_summary.csv) – aggregated performance metrics calculated using SQL  
+
+These datasets were simulated to reflect real-world collections operations data.
 
 ## 🔗 Data Modeling
 
