@@ -50,17 +50,18 @@ SQL joins were used to combine account-level and activity-level data for KPI ana
 Example:
 ```sql
 SELECT
-	ca.Agent_ID,
 	a.Aging_Bucket, 
 	COUNT(*) AS Total_Accounts,
 	AVG(ca.Call_Attempts) AS AVG_Call_Attemps,
 	COUNT(CASE WHEN ca.Contacted = 'Yes' THEN 1 END) * 1.0 / COUNT(*) AS Contact_Rate,
-	SUM(a.Rolled_Forward) * 1.0 / COUNT(*) AS Roll_Rate
-FROM contact_activity ca 
-	JOIN accounts a 
+	SUM(a.Rolled_Forward) * 1.0 / COUNT(*) AS Roll_Rate,
+	COUNT(CASE WHEN ca.Promise_to_Pay = 'Yes' THEN 1 END) * 1.0 / COUNT(CASE WHEN ca.Contacted = 'Yes' THEN 1 END) * 1.0 AS PTP_Conversion,
+	COUNT(CASE WHEN ca.Paid = 'Yes' THEN 1 END) * 1.0 / COUNT(*) AS Cure_Rate
+FROM sys.contact_activity ca 
+	JOIN sys.accounts a 
 	ON ca.Customer_ID = a.Customer_ID
-GROUP BY 1,2
-ORDER BY 1;
+GROUP BY 1
+ORDER BY 1
 ```
 
 ---
