@@ -87,6 +87,10 @@ Examples of analysis performed:
 - Evaluation of agent productivity vs. outcomes
 - Analysis of contact effectiveness and call attempts
 
+## 📊 Dashboard Preview
+
+![Collections Dashboard](images/dashboard.png)
+
 ## 🚀 Business Value
 This project demonstrates how data analytics can:
 - Improve visibility into collections performance
