@@ -96,7 +96,8 @@ Examples of analysis performed:
 Key KPI calculations were implemented in Power BI using DAX.
 
 See full list of measures in:
-(main/measures.txt)
+
+(collections-kpi-dashboard/measures.txt)
 
 ## 🚀 Business Value
 This project demonstrates how data analytics can:
