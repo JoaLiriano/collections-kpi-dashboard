@@ -1,0 +1,20 @@
+Contact Rate = 
+DIVIDE(
+    COUNTROWS(FILTER(contact_activity,contact_activity[Contacted] = "Yes")),
+    COUNTROWS(contact_activity)
+)  
+Cure Rate = 
+DIVIDE(
+    COUNTROWS(FILTER(contact_activity,contact_activity[Paid] = "Yes")),
+    COUNTROWS(contact_activity)
+) 
+PTP Conversion = 
+DIVIDE(
+    COUNTROWS(FILTER(contact_activity,contact_activity[Promise_to_Pay] = "Yes")),
+    COUNTROWS(FILTER(contact_activity,contact_activity[Contacted] = "Yes"))
+) 
+Roll Rate = 
+DIVIDE(
+    SUM(accounts[Rolled_Forward]),
+    COUNTROWS(accounts)
+)
