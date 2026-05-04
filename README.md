@@ -78,7 +78,7 @@ The project focuses on core collections performance metrics:
 ## 🛠️ Tools & Technologies
 - SQL – data extraction, joins, KPI calculations
 - Excel – data cleaning, analysis, and dashboarding
-- Tableau / Power BI (optional) – data visualization
+- Power BI – data visualization
   
 ## 🔍 Key Analysis & Insights
 Examples of analysis performed:
