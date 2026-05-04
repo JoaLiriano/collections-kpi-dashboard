@@ -91,6 +91,13 @@ Examples of analysis performed:
 
 ![Collections Dashboard](images/Dashboard.PNG)
 
+## 🧮 DAX Measures
+
+Key KPI calculations were implemented in Power BI using DAX.
+
+See full list of measures in:
+- `measures.txt`
+
 ## 🚀 Business Value
 This project demonstrates how data analytics can:
 - Improve visibility into collections performance
