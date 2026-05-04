@@ -89,7 +89,7 @@ Examples of analysis performed:
 
 ## 📊 Dashboard Preview
 
-![Collections Dashboard](images/Dashboard.png)
+![Collections Dashboard](images/Dashboard.PNG)
 
 ## 🚀 Business Value
 This project demonstrates how data analytics can:
